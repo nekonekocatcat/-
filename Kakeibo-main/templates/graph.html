@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <title>グラフページ</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="icon" href="static/favicon.ico">
+    <style>
+        #graphContainer {
+            text-align: center;
+        }
+
+        #graphAccessory {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px; /* ボタンとキャンバスの間隔を調整 */
+        }
+
+        #graphTitle {
+            margin: 0 10px; /* タイトルとボタンの間隔を調整 */
+            font-size: 18px; /* 適切なフォントサイズに調整してください */
+        }
+        /*
+        canvas {
+            border: 1px solid #000; キャンバスの境界を表示する場合
+        }
+        */
+
+        body {
+            font-family: 'arial unicode ms', sans-serif;
+            /* フォントを'arial unicode ms'に変更 */
+        }
+
+        label {
+            font-size: 40px;
+            /* ラベルの文字サイズを大きく */
+        }
+
+        input {
+            font-size: 40px;
+            /* 入力フィールドの文字サイズを大きく */
+        }
+
+        button {
+            font-size: 20px;
+            /* ボタンの文字サイズを大きく */
+        }
+        #CategoryDetail table {
+        width: 100%; /* テーブルの幅を設定 */
+        border-collapse: none; /* セル間の境界線を結合 */
+    }
+
+    #CategoryDetail th {
+        background-color: #4CAF50; /* ヘッダーの背景色 */
+        color: white; /* ヘッダーの文字色 */
+        padding: 10px; /* パディング */
+    }
+
+    #CategoryDetail td.category {
+        background-color: #f2f2f2; /* カテゴリーセルの背景色 */
+        padding: 10px; /* パディング */
+    }
+
+    #CategoryDetail td.amount {
+        background-color: #d1e7dd; /* 金額セルの背景色 */
+        padding: 10px; /* パディング */
+    }
+    </style>
+</head>
+
+<body>
+    
+    <div class="header">
+        <a href="/">入力ページ</a>
+        <a href="/graph">グラフページ</a>
+        <a href="/calendar">カレンダーページ</a>
+    </div>
+    <div id="graphContainer">
+        <div id="graphAccessory">
+            <button onclick="handlePrevButtonClick()">←</button>
+            <p id="graphTitle">今月の支出</p>
+            <button onclick="handleNextButtonClick()">→</button>
+        </div>
+        <canvas id="myPieChart"></canvas>
+    </div>
+
+    <div id="CategoryDetail">
+    <table>
+        <thead>
+            <tr>
+                <th>カテゴリー</th>
+                <th>合計金額</th>
+            </tr>
+        </thead>
+        <tbody id="categoryTableBody">
+            <!-- ここに動的に挿入されるデータがあります -->
+            <!-- 例: <tr><td class="category">食品</td><td class="amount">1000円</td></tr> -->
+        </tbody>
+        
+    </table>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="/static/PieChart.js"></script>
+</body>
+</html>

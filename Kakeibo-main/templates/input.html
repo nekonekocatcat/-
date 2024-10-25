@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <title>入力ページ</title>
+    <link rel="icon" href="static/favicon.ico">
+    <style>
+        body {
+            font-family: 'arial unicode ms', sans-serif;
+            /* フォントを'arial unicode ms'に変更 */
+        }
+
+        label {
+            font-size: 40px;
+            /* ラベルの文字サイズを大きく */
+        }
+
+        input {
+            font-size: 40px;
+            /* 入力フィールドの文字サイズを大きく */
+        }
+
+        button {
+            font-size: 40px;
+            /* ボタンの文字サイズを大きく */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="/">入力ページ</a>
+        <a href="/graph">グラフページ</a>
+        <a href="/calendar">カレンダーページ</a>
+    </div>
+    <br>
+
+    <form action="/input" method="post">
+        <center>
+            <label for="amount">金額を入力してください</label><br>
+            <input type="number" id="amount" name="amount" required>
+            <br>
+        </center>
+
+        <br>
+
+        <center>
+            <label for="category">カテゴリー</label><br>
+            <input type="text" id="category" name="category" list="example" required>
+            <datalist id="example">
+                <option value="食費"></option>
+                <option value="外食費"></option>
+                <option value="日用品"></option>
+                <option value="交通費"></option>
+                <option value="衣服"></option>
+                <option value="交際費"></option>
+                <option value="趣味"></option>
+                <option value="その他"></option>
+            </datalist>
+            <br>
+        </center>
+
+        <center>
+            <label for="date">日付</label><br>
+            <input type="date" id="date" name="date" required>
+            <br>
+        </center>
+
+        <br>
+
+        <center>
+            <button type="submit"
+                style="background-color: #ff6f61; color: #fff; padding: 25px 35px; font-size: 30px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">保存</button>
+        </center>
+        <br>
+    </form>
+
+</body>
+
+</html>

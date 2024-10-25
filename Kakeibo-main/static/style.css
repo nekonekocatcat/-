@@ -1,0 +1,32 @@
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.header a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.header a:hover {
+    color: blue;
+}
+
+.circle {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle.food { background-color: #ff8585; }
+.category-row.category-外食費 { background-color: #FFA500; }
+.category-row.category-日用品 { background-color: #FFFF00; }
+.category-row.category-交通費 { background-color: #00ff00; }
+.category-row.category-衣服 { background-color: #00FFFF; }
+.category-row.category-交際費 { background-color: #9898ed; }
+.category-row.category-趣味 { background-color: #ec73ec; }
+.category-row.category-その他 { background-color: #959595; }
