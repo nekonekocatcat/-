@@ -64,33 +64,6 @@ main.pyの場所は、このリポジトリのルートディレクトリに配�
 
 ```
 
-# 役割分担
-簡単な役割分担表です。
-
-| 学籍番号   | 作業担当 | 作業内容 |
-| ------ | -------- | -------- |
-| K22137 | リーダー | リーダー業務 |
-| K22001 | graph.html+css | 円グラフ表示用のhtmlとcss |
-| K22002 | graph.html+css | 円グラフ表示用のhtmlとcss |
-| K22145 | calendar.html+css+javascript | カレンダー表示用のhtmlとcss,javascript |
-| K22056 | calendar表示のためのpython+javascript | カレンダーに支出を表示するためのpythonとjavascript |
-| K22100 | input.html+css | データ入力用のhtmlとcss |
-| K22095 | input.html+css | データ入力用のhtmlとcss |
-| k22093 | carendar.html+css | カレンダー表示用のhtmlとcss |
-
-# 作業進捗
-簡単な作業進捗表です。
-
-| 学籍番号   | 作業内容 | 状況 |
-| ------ | -------- | -------- |
-| K22137 | README.mdの作成、各種機能の実装の補佐、その他リーダー業務 | README.mdの各機能の説明は、それぞれの担当に依頼予定(1/25) |
-| K22001 | graph.html用のCSS | ほとんど完成 |
-| K22002 | graph.html用のCSS、共通部分のCSS | 共にほとんど完成 |
-| K22145 | calendar.htmlのCSS | (△)カレンダーに金額を表示する機能の実装待ち。ただし、CSSはほとんど完成している。 |
-| K22056 | カレンダーに金額を表示する機能の実装 | 作業中 |
-| K22100 | input.htmlのCSS、発表用資料の作成 | CSSはほとんど完成。発表用資料の作成中 |
-| K22095 | input.htmlのCSS、発表用資料の作成 | CSSはほとんど完成。発表用資料の作成中 |
-| k22093 | calendar.htmlのCSS | (△)カレンダーに金額を表示する機能の実装待ち。ただし、CSSはほとんど完成している。 |
 
 # 画面遷移図
 ![kakeibo.png](https://github.com/2023AIT-OOP2-G14/Kakeibo/blob/main/kakeibo.png)
